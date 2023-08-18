@@ -28,7 +28,7 @@ gallery.addEventListener("click", onImageClick);
 
 function onImageClick(evt) {
   evt.preventDefault(evt);
-  if (evt.target === "IMG") {
+  if (evt.target.nodeName !== "IMG") {
     return;
   }
   {
